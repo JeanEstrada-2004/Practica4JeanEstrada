@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="css/estilosBootsTrapsd.css">
+        <link rel="stylesheet" href="css/MisEstilos.css">
+    </head>
+    <body class="cuerpodelformulario">
+        <div class="container-12 text-center encabezado">
+            <div class="row">
+                <div class="col-5">
+                    <a href="index.html">
+                        <img src="img/Logo.png" class="img-fuid logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-md-6"  id="Cformulario">
+            <!--Imagen de fondo-->
+            <img src="img/Fondo1.jpg" id="imgfondo">
+
+            <div class="row-6 formulario">
+                <h2 id="Tformulario">Formulario para registrar al alumno</h2>
+                <!--Fila para el formulario-->
+                <form class="row g-3">
+                    <div class="col-md-12">
+                        <label for="inputName" class="form-label" id="Tformulario">Nombres</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Ingrese el nombre del estudiante" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="inputLastName" class="form-label" id="Tformulario">Apellidos</label>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Ingrese el apellido del estudiante" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="inputEmail" class="form-label" id="Tformulario">Ingresa el Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Ingresa el correo institucional del estudiante" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="inputCourse" class="form-label" id="Tformulario">Curso</label>
+                        <input type="text" class="form-control" id="inputCourse" placeholder="Ingrese el curso del estudiante" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label id="Tformulario">Coloque las tres notas del estudiante:</label>
+                    </div>  <div></div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="nota1" class="form-label" id="Tformulario">Nota 1</label>
+                            <input type="text" class="form-control" id="nota1" required>
+                        </div>
+                        <div class="col-4">
+                            <label for="nota2" class="form-label" id="Tformulario">Nota 2</label>
+                            <input type="text" class="form-control" id="nota2" required>
+                        </div>
+                        <div class="col-4">
+                            <label for="nota3" class="form-label" id="Tformulario">Nota 3</label>
+                            <input type="text" class="form-control" id="nota3" required>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row-md-6"  id="Cformulario">
+            <!--Imagen de fondo-->
+            <img src="img/Fondo1.jpg" id="imgfondo">
+
+            <div class="row-6 formulario">
+                <h3 id="Tformulario">Promedio</h3>
+                <p id="Tformulario"><strong>En esta parte se mostrará automaticamente el promedio de las notas:</strong></p>
+                    <div>
+                        <h5 id="resultado"></h5>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="conteiner-fluid Pie">
+            <!--Fila para el Pie de Pagina-->
+            <div class="row gx-5">
+                <div class="col-md-6  offset-md-1">
+                    <h2>Los datos que ingresaste en el formulario son:</h2>
+                    <p id="resultados"></p>
+                </div>
+                <div class="col-md-5">
+                    <h2>Registro de Notas</h2>
+                    <a href="index.html">
+                        <img src="img/Logo.png" class="img-fuid logopie">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    <script src="JavaScript/JSBootsTrap.js"></script>
+    <script src="JavaScript/jsformulario.js"></script>
+    </body>
+</html>
